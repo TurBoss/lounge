@@ -678,6 +678,7 @@ button,
 #chat .show-more {
 	display: none;
 	padding: 10px;
+	padding-bottom: 0;
 	width: 100%;
 }
 
@@ -708,6 +709,17 @@ button,
 #chat .msg {
 	display: table-row;
 	word-wrap: break-word;
+}
+
+#chat .unread-marker span {
+	padding: 1px 0;
+	height: 1px;
+	border-color: #428bca;
+	background-color: #428bca;
+}
+
+#chat .unread-marker:last-child {
+	display: none;
 }
 
 .inline-channel {
