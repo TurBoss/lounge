@@ -777,7 +777,7 @@ $(function() {
 			.addClass("active")
 			.trigger("show");
 
-		var title = "The Lounge";
+		var title = "Spring RTS";
 		if (chan.data("title")) {
 			title = chan.data("title") + " — " + title;
 		}

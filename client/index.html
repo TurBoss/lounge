@@ -11,14 +11,14 @@
 	<meta name="referrer" content="no-referrer">
 	<meta name="theme-color" content="#455164">
 
-	<title>The Lounge</title>
+	<title>Spring RTS</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link id="theme" rel="stylesheet" href="<%= typeof(theme) !== "undefined" ? theme : "themes/example.css" %>">
 	<style id="user-specified-css"></style>
 
-	<link rel="shortcut icon" href="img/favicon.png" data-other="img/favicon-notification.png" data-toggled="false" id="favicon">
+	<link rel="shortcut icon" href="img/favicon.ico" data-other="img/favicon-notification.png" data-toggled="false" id="favicon">
 	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
 	<link rel="manifest" href="manifest.json">
 
@@ -153,11 +153,21 @@
 								<h2>User preferences</h2>
 							</div>
 							<div class="col-sm-3">
-								<label for="connect:nick">Nick</label>
+								<label for="connect:nick">Username</label>
 							</div>
 							<div class="col-sm-9">
 								<input class="input nick" id="connect:nick" name="nick" value="<%= defaults.nick %>">
 							</div>
+
+							<div class="col-sm-3">
+                                                                <label for="connect:password">Password</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                                 <input class="input" id="connect:password" type="password" name="password" value="<%= defaults.password %>">
+                                                        </div>
+
+
+							<!--
 							<div class="col-sm-3">
 								<label for="connect:username">Username</label>
 							</div>
@@ -169,7 +179,7 @@
 							</div>
 							<div class="col-sm-9">
 								<input class="input" id="connect:realname" name="realname" value="<%= defaults.realname %>">
-							</div>
+							</div>-->
 							<div class="col-sm-3">
 								<label for="connect:channels">Channels</label>
 							</div>
